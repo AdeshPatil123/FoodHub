@@ -2,11 +2,9 @@ import React from "react";
 import "./Styles/home.css";
 import Modal from "react-modal";
 import "./Styles/forms.css";
-import { GoogleOAuthProvider } from "@react-oauth/google";
-import { GoogleLogin } from "@react-oauth/google";
+
 import { googleLogout } from "@react-oauth/google";
-import { GoogleLogout } from 'react-google-login';
-// import GoogleLogin from 'react-google-login';
+
 import { withRouter } from "react-router-dom";
 import jwtDecode from "jwt-decode";
 import axios from "axios";

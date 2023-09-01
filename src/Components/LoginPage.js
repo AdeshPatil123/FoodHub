@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import Modal from 'react-modal';
 import axios from 'axios';
-// import FacebookLogin from 'react-facebook-login';
-// import GoogleLogin from 'react-google-login';
-
-// import '../styles/header.css';
-// const API_URL = require('../contants').API_URL;
 
 const customStyles = {
     content: {
