@@ -143,3 +143,55 @@
     font-size: 1rem;
     font-weight: 600;
 }
+
+@media(max-width:991px){
+
+    .nav1 .btn{
+        display: none;
+    }
+
+    .menuToggle{
+        position: relative;
+        width:40px;
+        height:40px;
+        background:url("../../../public/Assets/menu.png");
+        background-size:30px;
+        padding:1rem;
+        background-color:rgb(196, 190, 216);
+        border-radius:5px;
+        margin-right:20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor:pointer;   
+    }
+    .menuToggle.active{
+        background:url("../../../public/Assets/close.png");
+        background-size:25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding:1rem;
+        background-color:rgb(196, 190, 216);
+        border-radius:5px;
+        margin-right:20px;
+        cursor:pointer;   
+     }
+
+     .nav1 .btn.active{
+        height:250px;
+        width:200px;
+        position: fixed;
+        top:68px;
+        right:0;
+        display:flex;
+        gap:2rem;
+        font-size:1.3rem;
+        font-weight:bolder;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color:#fff;
+    }
+}
+
+

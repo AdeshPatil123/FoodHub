@@ -176,19 +176,30 @@ class Nav1 extends React.Component {
     console.log(credentialResponse);
   };
 
+  toggleMenu = ()=>{
+    const menuToggle = document.querySelector('.menuToggle');
+        const links =  document.querySelector('.btn');
+        menuToggle.classList.toggle('active');
+        links.classList.toggle('active');
+  }
+
+  
+
+  
+
   render() {
     const { loginModalIsOpen, isLoggedIn, loggedInUser,signUpModalIsOpen,username,password,Name,loginError, signUpError, user,signUpsuccessfull} = this.state;
     console.log(user)
     return (
       <>
         
-        <div className="nav1">
+        <div className="nav1" onScroll={this.handleScroll}>
           <div className="logo">
             <h4 onClick={this.Gohome}>
               <span>Food</span>Hub
             </h4>
           </div>
-          <div className="menuToggle" onclick="toggleMenu()"></div>
+          <div className="menuToggle" onClick={this.toggleMenu}></div>
           {!isLoggedIn ?
           <div class="btn">
             <button type="button" onClick={this.handleLogin}>
