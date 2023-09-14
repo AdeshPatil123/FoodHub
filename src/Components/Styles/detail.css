@@ -57,8 +57,8 @@
 } */
 .crausal1 h2 {
   color: black;
-  /* margin-top:10px; */
-  line-height: 0.2;
+  margin-top:10px;
+  line-height: 1.2;
   font-weight: bolde;
 }
 .btn-3 {
@@ -67,6 +67,7 @@
   margin-top: -20px;
   margin-bottom: 30px;
 }
+
 
 /* h5,h2,h3,h4{
     font-family: Arial, Helvetica, sans-serif;
