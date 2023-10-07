@@ -91,11 +91,7 @@
     padding:10px 12px;
     font-size:4rem;
 }
-.content1 .logo1 h2 span{
-    color:#ff0157;
-    /* font-weight:bolder; */
 
-}
 
 .content1 p {
     color: #fff;
@@ -103,7 +99,7 @@
     font-weight: bold;
     margin-bottom: 20px;
     margin-top: 10px;
-    text-align: center;
+    text-align:left;
 }
 
 .locations {

@@ -53,15 +53,15 @@ class Wallpaper extends React.Component{
             return null;
         }
         if(suggestations.length == 0 && inputText){
-            return <ul className="list-group" style={{zIndex:"1000"}}>
+            return <ul style={{zIndex:"1000"}}>
                 <li className="list-group-item">No  search found</li>
             </ul>
         }
 
         return(
-            <ul className="list-group">
+            <ul>
                 {
-                    suggestations.map((item,index)=>(<li className="list-group-item li1" key={index} onClick={()=>this.selectingRestaurant(item)}>{item.name}-{item.locality},{item.city}</li>))
+                    suggestations.map((item,index)=>(<li className="list-group-item li1" key={index} style={{zIndex:"1000"}} onClick={()=>this.selectingRestaurant(item)}>{item.name}-{item.locality},{item.city}</li>))
                 }
             </ul>
         )
@@ -100,9 +100,7 @@ class Wallpaper extends React.Component{
                                             return <option value={item.location_id}>{item.name},{item.city}</option>
                                         })}
                                         
-                                        {/* <option value="mum">mumbai</option>
-                                        <option value="kjt">karjat</option>
-                                        <option value="panvel">panvel</option> */}
+
                                     </select>
                                 </div>
                                 <div className="col-xl-6 col-lg-6 col-md-10  col-sm-12  mb-2">
